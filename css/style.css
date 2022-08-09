@@ -1,0 +1,368 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: white;
+}
+
+/* Menu */
+header {
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right, #67AECA, #675682);
+    position: fixed;
+}
+
+
+/* Menu Logo */
+
+header #logo a {
+    text-align: center;
+    padding: 1px;
+
+
+}
+
+header #logo h1 {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #675682, #67AECA, #675682);
+    border-image-slice: 1;
+}
+
+/* Menu Top */
+
+#menu-top ul {
+    background: linear-gradient(to right, #67AECA, #675682);
+    padding: 10px;
+}
+
+#menu-top li {
+    padding: 2px;
+}
+
+
+#menu-top li a {
+    display: block;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #675682, #67AECA, #675682);
+    border-image-slice: 1;
+}
+
+#menu-top li a:hover {
+    background: linear-gradient(130deg, #6756821a, #675682 30%, #67AECA 66.05%, #67aeca57 80%);
+    border: none;
+}
+
+#menu-top li a i {
+    padding: 0 10px;
+}
+
+
+.pesquisadiv {
+    position: relative;
+}
+
+input#pesquisa {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin: 0;
+
+}
+
+label#searchico {
+    color: black;
+    right: 4px;
+    position: absolute;
+    padding: 6px;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+
+#menu-top li.logcad {
+    width: 40%;
+    display: inline-block;
+}
+
+#menu-top span.rowr {
+    border-right: 1px solid;
+    margin-left: 2px;
+    margin-right: 4px;
+    padding: 10px 0;
+    color: #675682;
+    border-width: 1px;
+    border-style: solid;
+    border-image:
+        linear-gradient(to bottom,
+            #67AECA,
+            #675682) 1 100%;
+}
+
+
+.autor {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #675682, #67AECA, #675682);
+    border-image-slice: 1;
+    color: black;
+    width: 100%;
+}
+
+.autor:hover {
+    background: linear-gradient(130deg, #680aff, #675682 30%, #67AECA 66.05%, #00b7ff 80%);
+    border: none;
+}
+
+/* Menu | Aviso */
+
+#avisos {
+    background: #67AECA;
+    padding: 8px 0;
+}
+
+#avisos h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#avisos p {
+    background-color: #675682;
+    padding: 4px;
+}
+
+/*<!-- ARTIGOS -->*/
+
+article {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding-left: 300px;
+}
+
+#episodio h4 {
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    background: linear-gradient(120deg, #f5f4f400 5%, #5f0f4e 30%, #5f0f4e 70.05%, #ffffff00 95%);
+    margin-bottom: 3px;
+}
+
+#episodio section {
+    width: 250px;
+    height: 370px;
+    background-color: #5f0f4e;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+#episodio section span.ep {
+    position: absolute;
+    top: 0;
+    background-color: #5f0f4e;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#episodio section img:hover {
+    background-color: #E52A6F;
+    opacity: 0.8;
+
+}
+
+
+#episodio section img {
+    width: 100%;
+    height: 340px;
+}
+
+#episodio h1 {
+    text-align: center;
+    overflow: hidden;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #675682;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5f0f4e;
+}
+
+
+
+
+/* Responsivo */
+@media (max-width:1059px) {
+    header {
+        width: 300px;
+
+    }
+
+
+    article {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        padding-left: 300px;
+    }
+
+    #episodio section {
+        width: 200px;
+    }
+
+
+
+}
+
+@media (max-width:711px) {
+
+
+    #checkd {
+        display: none;
+    }
+
+    label {
+        -webkit-appearance: push-button;
+        -moz-appearance: button;
+        display: inline-block;
+        cursor: pointer;
+        padding: 15px;
+
+
+    }
+
+    #ocico {
+        float: left;
+
+    }
+
+    #ocultar {
+        z-index: 4;
+        color: white;
+        width: 100%;
+        line-height: 20px;
+        background: linear-gradient(to right, #67AECA, #675682);
+        position: fixed;
+
+    }
+
+    #ocultar h1 {
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        margin-left: 15px;
+    }
+
+    article#episodio {
+        position: relative;
+        top: 50px;
+    }
+
+    header #menu-top #logo {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul#menu-padrao {
+        top: 35px;
+        position: relative;
+    }
+
+    #checkd:checked~#menu {
+        display: block;
+        z-index: 2;
+    }
+
+    article {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+
+    }
+}
+
+@media (min-width:701px) {
+
+    #ocultar,
+    #checkd {
+        display: none;
+    }
+
+    ul#menu-padrao {
+        top: 0px;
+        position: relative;
+    }
+}
